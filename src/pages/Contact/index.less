@@ -1,0 +1,51 @@
+.nohover {
+  tr:hover > td {
+    background-color: transparent !important;
+  }
+}
+
+
+.bordered {
+  .ant-table {
+    border: 1px solid #dfdede;
+  }
+}
+
+
+@media (min-width: 960px) {
+  .leftScreen {
+    text-align: left;
+  }
+
+  .buttonGap {
+    margin-right: 8px;
+  }
+}
+
+@media (max-width: 960px) {
+  .buttonGap {
+    margin-top: 8px;
+  }
+}
+
+.hoverView {
+  position: relative;
+
+  & > * {
+    margin-left: 8px;
+  }
+
+  button {
+    position: absolute;
+    left: 0;
+    display: none;
+  }
+
+  &:hover {
+    button {
+      display: inline-block;
+    }
+  }
+}
+
+
